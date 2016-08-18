@@ -10,5 +10,12 @@ cd "$(dirname $0)"/..
 echo "› brew bundle"
 brew bundle
 
+echo "HERE: $(pwd)"
+
 # find the installers and run them iteratively
-find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+#find . -name install.sh | while read installer
+for installer in $(find . -name install.sh)
+do
+    echo "Running: ${installer}..."
+    sh -c "${installer}"
+done
