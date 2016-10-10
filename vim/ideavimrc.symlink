@@ -4,11 +4,64 @@ source ~/.vimrc
 
 " =============================================================================
 " Editor Control
-" =============================================================================
+" -----------------------------------------------------------------------------
+"
+" Control the editor configuration.
+"
+" Commands are typically led by "<Leader>v", where "v" stands for "vim".
+"
 
 nnoremap <Leader>vs :source ~/.ideavimrc<CR>
 nnoremap <Leader>ve :edit ~/.ideavimrc<CR>
 
 " =============================================================================
 " Code Editing
+" -----------------------------------------------------------------------------
+"
+" Control the code editor.
+"
+" Commands are typically led by "<Leader>i", where "i" stands for "idea".
+"
+
+" Stands for '(i)dea (t)oggle (w)rap'
+nnoremap <Leader>itw :action EditorToggleUseSoftWraps<CR>
+
 " =============================================================================
+" File Navigation
+" -----------------------------------------------------------------------------
+"
+" Search through files and file contents.
+"
+" Commands are typically led by:
+"
+" * "<Leader>f", where "f" stands for "find".
+" * "<Leader>g", where "g" stands for "go".
+
+nnoremap <Leader>fp :action FindInPath<CR>
+
+nnoremap <Leader>gb :action Back<CR>
+nnoremap <Leader>gp :action Back<CR>
+
+nnoremap <Leader>gf :action Forward<CR>
+nnoremap <Leader>gn :action Forward<CR>
+
+" Go to Idea Project view
+nnoremap <Leader>gip :action ActivateProjectToolWindow<CR>
+
+" Go to Idea Terminal view
+nnoremap <Leader>git :action ActivateTerminalToolWindow<CR>
+
+" Go to Idea Shell (terminal) view
+nnoremap <Leader>gis :action ActivateTerminalToolWindow<CR>
+
+" =============================================================================
+" Refactoring
+" -----------------------------------------------------------------------------
+"
+" Refactor the code under the cursor.
+"
+" Commands are typically led by "<Leader>r", where "r" stands for "refactor".
+"
+
+nnoremap <Leader>rm :action Move<CR>
+

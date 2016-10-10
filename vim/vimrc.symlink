@@ -228,3 +228,6 @@ autocmd BufEnter *.md setlocal spell
 autocmd BufEnter *.markdown setlocal spell
 
 autocmd BufEnter *.css ColorHighlight
+
+autocmd FileType yaml setlocal sw=2 sts=2 et
+
