@@ -42,4 +42,5 @@ unset config_files
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/mjholler/.sdkman"
+export PATH=/home/mjholler/anaconda3/bin:$PATH
 [[ -s "/home/mjholler/.sdkman/bin/sdkman-init.sh" ]] && source "/home/mjholler/.sdkman/bin/sdkman-init.sh"
